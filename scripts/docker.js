@@ -1,10 +1,10 @@
 
-module.exports = function(robot) {
-  robot.hear(/list/, function(res) {
+module.exports = (robot) => {
+  robot.hear(/list/, (res) => {
     res.send('getting list of docker instances');
   });
 
-  robot.error(function(error, res) {
+  robot.error((error, res) => {
     robot.logger.error('error', error);
     if(res) {
       res.send('Error: ' + error);
