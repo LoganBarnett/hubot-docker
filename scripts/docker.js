@@ -22,5 +22,5 @@ module.exports = function(robot) {
   });
 
   // robot.messageRoom('I am ready for commands.');
-  robot.send('general', 'I am ready for commands.');
+  robot.send('#general', 'I am ready for commands.');
 };
