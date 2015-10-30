@@ -27,7 +27,7 @@ module.exports = function(robot) {
 
   // robot.messageRoom('I am ready for commands.');
   robot.on('connected', function() {
-    console.log('we should be ready now');
+    robot.logger.info('we should be ready now');
     robot.send('general', 'I am ready for commands.');
   });
 };
