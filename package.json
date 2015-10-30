@@ -25,8 +25,5 @@
   },
   "engines": {
     "node": "0.10.x"
-  },
-  "scripts": {
-    "start": "node --harmony bin/hubot -a slack"
   }
 }
