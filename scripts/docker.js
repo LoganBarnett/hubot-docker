@@ -21,5 +21,5 @@ module.exports = function(robot) {
     }
   });
 
-  robot.messageRoom 'I am ready for commands.'
+  robot.messageRoom('I am ready for commands.');
 };
