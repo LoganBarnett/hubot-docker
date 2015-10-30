@@ -1,3 +1,7 @@
+// Description:
+// Bot for managing docker instances
+// Commands:
+// list - list running docker instances
 var exec = require('child_process').exec;
 
 module.exports = function(robot) {
@@ -22,5 +26,8 @@ module.exports = function(robot) {
   });
 
   // robot.messageRoom('I am ready for commands.');
-  robot.send('#general', 'I am ready for commands.');
+  robot.on('open', function() {
+    console.log('we should be ready now');
+    robot.send('general', 'I am ready for commands.');
+  });
 };
