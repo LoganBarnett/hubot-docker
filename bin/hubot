@@ -6,6 +6,7 @@ npm install
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 
 exec node_modules/.bin/hubot --name "hubot-docker" "$@"
+# Aborted attempts at bringing sanity to the world.
 # exec node_modules/.bin/babel-hubot --name "hubot-docker" "$@"
 # node_modules/.bin/coffee --nodejs --harmony node_modules/.bin/hubot --name "hubot-docker" "$@"
 # exec node --harmony node_modules/.bin/hubot --name "hubot-docker" "$@"
