@@ -9,6 +9,7 @@ mkdir /app/.ssh
 echo "$SSH_PRIVATE_KEY" > .ssh/id_rsa
 echo "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 echo "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+echo "Host 52.7.174.243\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 ssh logan@52.7.174.243 'docker ps'
 
