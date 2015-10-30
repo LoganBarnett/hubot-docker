@@ -20,4 +20,6 @@ module.exports = function(robot) {
       res.send('Error: ' + error);
     }
   });
+
+  robot.messageRoom 'I am ready for commands.'
 };
