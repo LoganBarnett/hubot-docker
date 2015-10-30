@@ -11,7 +11,8 @@ echo "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 echo "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 echo "Host $REMOTE_HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
-ssh $REMOTE_USR@$REMOTE_HOST 'docker ps'
+echo "sshing to $REMOTE_USER@$REMOTE_HOST"
+ssh $REMOTE_USER@$REMOTE_HOST 'docker ps'
 
 echo "Cleaning up..."
 rm -Rf /app/appname
