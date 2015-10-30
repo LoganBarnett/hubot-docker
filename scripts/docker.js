@@ -37,6 +37,6 @@ module.exports = function(robot) {
   });
 
   robot.logger.info('we should be ready now (non-event)');
-  robot.send('general', 'I am ready for commands.');
+  // robot.send('general', 'I am ready for commands.');
   robot.messageRoom('general', 'I am ready for commands.');
 };
