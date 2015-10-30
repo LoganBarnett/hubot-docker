@@ -25,9 +25,14 @@ module.exports = function(robot) {
     }
   });
 
+  robot.enter(function(res, user) {
+    res.send('saw ' + user);
+  });
+
   // robot.messageRoom('I am ready for commands.');
   robot.on('connected', function() {
     robot.logger.info('we should be ready now');
     robot.send('general', 'I am ready for commands.');
+    robot.messageRoom('general', 'I am ready for commands.');
   });
 };
